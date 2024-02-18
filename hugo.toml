@@ -1,0 +1,125 @@
+baseurl = "https://fiatdesign.com"
+DefaultContentLanguage = "en"
+title = "FiatDesign by Denis Shatilov"
+theme = "fiatdesign"
+defaultMarkdownHandler="goldmark"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+[Params]
+  homeTitle = "FiatDesign by Denis Shatilov" # Set a different text for the header on the home page
+  mainSections = ["post","posts"]
+  logo = "img/logo.png" # Expecting square dimensions
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = false
+  comments = false
+  readingTime = false
+  wordCount = false
+  useHLJS = true
+  socialShare = false
+  delayDisqus = false
+  showRelatedPosts = true
+  hideAuthor = true
+  selfHosted = true
+  flipper = true
+  flipperFolder = "img/slider"
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+#  disclaimerText = "The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way."
+
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#  # position: see values of CSS background-position.
+#  position = "center top"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
+
+[Author]
+# Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
+#   name = "Some Person"
+#   website = "yourwebsite.com"
+#   email = "youremail@domain.com"
+#   facebook = "username"
+#   github = "username"
+#   gitlab = "username"
+#   bitbucket = "username"
+#   twitter = "username"
+#   reddit = "username"
+#   linkedin = "username"
+#   xing = "username"
+#   stackoverflow = "users/XXXXXXX/username"
+#   snapchat = "username"
+#   instagram = "username"
+#   youtube = "user/username" # or channel/channelname
+#   soundcloud = "username"
+#   spotify = "username"
+#   bandcamp = "username"
+#   itchio = "username"
+#   vk = "username"
+#   paypal = "username"
+#   telegram = "username"
+#   500px = "username"
+#   codepen = "username"
+#   mastodon = "url"
+#   kaggle = "username"
+#   weibo = "username"
+#   slack = "username"
+#   medium = "username"
+#   discord = "invite code (https://discord.gg/XXXXXXX)"
+#  strava = "userid"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      linkifyProtocol = 'https'
+      strikethrough = true
+      table = true
+      taskList = true
+      [markup.goldmark.extensions.cjk]
+        eastAsianLineBreaks = false
+        eastAsianLineBreaksStyle = 'simple'
+        enable = false
+        escapedSpace = false
+      [markup.goldmark.extensions.passthrough]
+        enable = false
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = []
+          inline = []
+      [markup.goldmark.extensions.typographer]
+        apostrophe = '&rsquo;'
+        disable = false
+        ellipsis = '&hellip;'
+        emDash = '&mdash;'
+        enDash = '&ndash;'
+        leftAngleQuote = '&laquo;'
+        leftDoubleQuote = '&ldquo;'
+        leftSingleQuote = '&lsquo;'
+        rightAngleQuote = '&raquo;'
+        rightDoubleQuote = '&rdquo;'
+        rightSingleQuote = '&rsquo;'
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      wrapStandAloneImageWithinParagraph = true
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
