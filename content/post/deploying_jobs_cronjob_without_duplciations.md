@@ -1,3 +1,12 @@
++++
+title = "Deploying Job and CronJob with YAML Anchors and List"
+date = "2025-04-08"
+author = "Denis"
+description = ""
+tags = ["Kubernetes"]
+categories = ["Development"]
++++
+
 # DRY Kubernetes: Deploying Job and CronJob with YAML Anchors and List
 
 Managing both a one-time `Job` and a recurring `CronJob` in Kubernetes often leads to duplicated specs. In most cases, they share the same container image, environment variables, volumes, and execution logic — so why repeat yourself?
